@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<style>
+    body {
+        background-color: #f1f1f1;
+    }
+    h1 {
+        color: #000;
+        text-align: center;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Hello Y'all</h1>
+    <p>My name is Samuel</p> <br>
+    <p>{{name}} is my best friend</p>
+    <p>I am a Software Engineer and in {{new}} year of Coding</p> <br><br>
+
+    <div>{% for a in range(11)%}
+        {% if a % 2 == 1 %}
+        <p>{{a+1}} </p>
+        {%else%}
+        <p>{{a-1}}</p>
+        {%endif%}
+    {%endfor%}
+    </div>
+</body>
+</html>
