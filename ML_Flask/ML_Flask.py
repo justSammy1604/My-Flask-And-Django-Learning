@@ -14,7 +14,7 @@ def predict():
     init_features = [float(x) for x in request.form.values()]
     final_features = [np.array(init_features)]
 
-    prediction = model.predict(final_features)
+    prediction = model.predict(final_features) 
 
 
 
