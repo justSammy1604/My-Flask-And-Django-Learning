@@ -24,7 +24,7 @@ def get_fact():
     url = "https://useless-facts.sameerkumar.website/api"
     response = json.loads(requests.request("GET", url).text)
     fact = response['data']
-    return fact
+    return fact 
 
 
 
